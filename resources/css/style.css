@@ -12,7 +12,8 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 header {
@@ -23,6 +24,18 @@ header {
   color: white;
   justify-content: space-between;
   align-items: center;
+  margin-top: 1rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  height: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 1rem;
 }
 
 nav {
@@ -34,4 +47,19 @@ nav {
 nav span {
   display: flex;
   padding-right: 2rem;
+}
+
+.headlineBox {
+  display: flex;
+  width: 1040px;
+  justify-content: flex-end;
+}
+
+.headline {
+  font-weight: bold;
+  background-color: white;
+  font-size: 2rem;
+  line-height: 1.2;
+  padding: 1.5rem 5rem;
+  margin-top: 10rem;
 }
