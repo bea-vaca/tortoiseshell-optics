@@ -49,6 +49,10 @@ nav span {
   padding-right: 2rem;
 }
 
+#menu {
+  display: none;
+}
+
 .headlineBox {
   display: flex;
   width: 1040px;
@@ -63,14 +67,6 @@ nav span {
   padding: 1.5rem 5rem;
   margin-top: 10rem;
 }
-
-/*.main {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}*/
 
 .main1 {
   display: flex;
@@ -163,8 +159,118 @@ footer {
   background-color: azure;
   align-items: center;
 }
+
 footer img {
   height: 1.5rem;
   padding-left: 2rem;
   padding-right: 1rem;
+}
+
+
+/*MEDIA QUERY FOR TABLET*/
+
+@media only screen and (max-width: 1024px) {
+
+  header {
+    margin-top: 0;
+    width: 100%;
+  }
+
+  .banner {
+    height: 22rem;
+  }
+
+  .headline {
+    font-size: 1.33rem;
+    padding: .75rem 4rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+}
+
+
+/*MEDIA QUERY FOR SMARTPHONE*/
+
+@media only screen and (max-width: 470px) {
+
+  .banner {
+    height: 17rem;
+    background-position: 20%;
+  }
+
+  nav span {
+    display: none;
+  }
+
+  #menu {
+    display: flex;
+  }
+
+  #name {
+    display: none;
+  }
+
+  .headlineBox {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .headline {
+    width: 100%;
+    font-size: 1rem;
+    margin-top: 9rem;
+    margin-right: 0;
+    padding: 1rem 0rem;
+    text-align: center;
+  }
+
+  .main1 {
+    height: auto;
+  }
+
+  .features {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3.77rem;
+    margin-bottom: 3.77rem;
+  }
+
+  .icon {
+    margin: 1.54rem;
+    height: 6rem;
+  }
+
+  .features span {
+    font-size: .77rem;
+  }
+
+  .main2 {
+    height: auto;
+  }
+
+  .philapp {
+    flex-direction: column;
+    width: auto;
+    height: auto%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .infoblock {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 4rem;
+  }
+
+  h2 {
+    width: 100%;
+    padding-left: 0;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    text-align: center;
+  }
 }
